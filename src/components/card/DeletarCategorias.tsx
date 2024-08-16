@@ -30,7 +30,7 @@ function DeletarCategoria() {
 
     async function deletarCategoria() {
         
-        await deletar(`/deletarCategoria/${id}`)
+        await deletar(`/categorias/${id}`)
 
         retornar()
     }

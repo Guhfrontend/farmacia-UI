@@ -7,7 +7,7 @@ import Navbar from './components/navbar/Navbar'
 import Footer from './components/footer/Footer'
 import ListarCategorias from './components/card/ListarCategorias'
 import CardCategorias from './components/card/CardCategorias'
-import FormularioCategorias from './components/card/FormCategoria'
+import FormularioCategorias from './components/card/FormularioCategorias'
 import DeletarCategoria from './components/card/DeletarCategorias'
 
 function App() {
@@ -16,9 +16,9 @@ function App() {
   return (
     <BrowserRouter>
       <Navbar />
-      <div className='min-h-[84vh]'>
+      <div className='min-h-[85vh]'>
         <Routes>
-        <Route path="" element={<Home />} />
+        <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
             <Route path="/categorias" element={<ListarCategorias />} />
             <Route path="/cadastroCategoria" element={<FormularioCategorias />} />
